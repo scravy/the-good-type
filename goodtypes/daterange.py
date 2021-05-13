@@ -107,9 +107,11 @@ class DateRange:
         return NotImplemented
 
     def _cmp(self, other: datetime.date):
-        if (max_ := self.max) is not None and max_ < other:  # pylint: disable=E0601
+        max_ = self.max
+        if max_ is not None and max_ < other:  # pylint: disable=E0601
             return -1
-        if (min_ := self.min) is not None and min_ > other:  # pylint: disable=E0601
+        min_ = self.min
+        if min_ is not None and min_ > other:  # pylint: disable=E0601
             return 1
         return 0
 
