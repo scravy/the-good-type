@@ -2,7 +2,7 @@ import datetime
 import unittest
 from typing import List
 
-from tgt.daterange import DateRange
+from goodtypes.daterange import DateRange
 
 
 class TestDateRange(unittest.TestCase):

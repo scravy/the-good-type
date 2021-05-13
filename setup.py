@@ -16,11 +16,11 @@ with open("README.md", "r") as fh:
         long_description = before + after
 
 __pkginfo__ = {}
-with open("tgt/__pkginfo__.py") as fh:
+with open("goodtypes/__pkginfo__.py") as fh:
     exec(fh.read(), __pkginfo__)
 
 setuptools.setup(
-    name="tgt",
+    name="goodtypes",
     version=__pkginfo__['__version__'],
     author="Julian Fleischer",
     author_email="tirednesscankill@warhog.net",

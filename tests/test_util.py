@@ -1,7 +1,7 @@
 import datetime
 import unittest
 
-from tgt.util import range_excl, range_incl
+from goodtypes.util import range_excl, range_incl
 
 
 class TestDateRange(unittest.TestCase):
